@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <title>hw1</title>
+</head>
+<body>
+    <h1>Speed Benchmarks</h1>
+
+    <header>
+        <nav>
+            <a class="nav-link" href="index.html">Overview</a> 
+            <a class="nav-link" href="factors.html">Factors</a> 
+            <a class="nav-link active-nav" href="benchmarks.html">Benchmarks</a> 
+            <a class="nav-link" href="popularity.html">Popularity</a> 
+        </nav>
+    </header>
+    
+    <p>Here are some concrete benchmarks of web frameworks built with specific languages, set to do a series of common tasks like database retrieval, sorting, security, and encoding.  It's not a perfect or rigorous comparison because it's doing a very specific set of tasks, but what it is testing is practical in its application.</p>
+
+    <div id="img-container">
+        <figure>
+            <img src="images\speed.png" alt= "speed-chart"/>
+            <figcaption>
+                Comprehensive Tests
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images\speed-2.png" alt= "json-serialization-chart"/>
+            <figcaption>
+                Serialization
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images\speed-3.png" alt= "single-query-chart"/>
+            <figcaption>
+                Network Requests
+            </figcaption>
+        </figure>
+    </div>
+
+    <p>As you can see, lower level, compiled languages with no garbage collector like C and Rust tend to dominate the standings for performance.  Interpreted languages like javascript are not as fast, but they still remain competitive because of the excellent tooling and ecosystem javascript enjoys from its popularity.</p>
+
+    <h2>Sources: </h2>
+    <ol>
+        <li>
+            <a class="source" href="https://www.techempower.com/benchmarks/#section=data-r23">https://www.techempower.com/benchmarks/#section=data-r23</a>
+        </li>
+        <li>
+            <a class="source" href="https://www.techempower.com/benchmarks/#section=data-r23&test=json">https://www.techempower.com/benchmarks/#section=data-r23&test=json</a>
+        </li>
+        <li>
+            <a class="source" href="https://www.techempower.com/benchmarks/#section=data-r23&test=db">https://www.techempower.com/benchmarks/#section=data-r23&test=db</a>
+        </li>
+    </ol>
+  
+
+    <footer>
+        <img id="footer-img" src="images\logo.jpg" width="200" height="200">
+        <p> CST336 Internet Programming. 2026 Gonda</p>
+    </footer>
+</body>
+</html>

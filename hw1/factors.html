@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <title>hw1</title>
+</head>
+<body>
+    <h1>Factors for Speed</h1>
+
+    <header>
+        <nav>
+            <a class="nav-link" href="index.html">Overview</a> 
+            <a class="nav-link active-nav" href="factors.html">Factors</a> 
+            <a class="nav-link" href="benchmarks.html">Benchmarks</a> 
+            <a class="nav-link" href="popularity.html">Popularity</a> 
+        </nav>
+    </header>
+    
+    <p>What actually makes a language fast?</p>
+
+    <img class="single-img" src="images/factors.webp" alt="factors-img">
+
+    <ul>
+        <li>Compiled vs Interpreted - Compiled languages turn code into a binary file which is executed as straight machine code at run time.  Interpreted languages are run lin by line at execution, which is slower but speeds up the iteration of the coding process.</li>
+        <li>Strength of the Runtime/Compiler - Even if your code has the same basic structure, the way it is interpreted by a good compiler which can optimize the execution of your code can make a huge difference on its performance.</li>
+        <li>Memory Management - Garbage Collection makes life much easier by not having to manually free memory, but it has a huge performance cost because GC languages need to add extra overhead.</li>
+        <li>Typing - Some languages like javascript or python let you declare variables without giving an explicit type, like <code>let x = 5;</code>. This is more convenient because you can change the variable into other types without having to cast new variables, but it makes the runtime have to figure out the type because you didn't tell it ahead of time what it was going to be.</li>
+        <li>Popularity - The more popular a language is, the more people will care.  Because they care more, they will build better tools and libraries for that language.  So even though a language might not inherently be that good, because its so popular, people create excellent tools like javascript's v8 engine which pushes the language to its limits.</li>
+    </ul>
+
+    <h2>Sources: </h2>
+    <ol>
+        <li>
+            <a class="source" href="https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/">https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/</a>
+        </li>
+    </ol>
+
+    <footer>
+        <img id="footer-img" src="images\logo.jpg" width="200" height="200">
+        <p> CST336 Internet Programming. 2026 Gonda</p>
+    </footer>
+</body>
+</html>

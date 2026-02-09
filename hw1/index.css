@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: antiquewhite;
+    border: 3px solid white;
+}
+
+nav {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    text-align: center;
+    text-decoration: none; 
+    color: black; 
+    background-color: #b5a3d8; 
+    padding: 10px 30px; 
+    border: 3px solid rgb(224, 180, 180);
+    display: inline-block; 
+    text-align: center; 
+    font-size: 2em;
+    box-shadow: 2px 2px #888888;
+}
+
+.nav-link:hover {
+    cursor: pointer; 
+}
+
+.active-nav {
+    border: 3px solid rgb(246, 255, 0);
+    box-shadow: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bitcount Single', monospace;
+}
+
+#img-container {
+    margin-bottom: 30px;
+    display:flex; 
+    justify-content:center
+}
+
+figure {
+    text-align: center; 
+    width:40%
+}
+
+figcaption {
+    font-size:max(1vw, 2vw)
+}
+
+img {
+    border:5px solid black;
+    width:100%;
+    height: auto;
+}
+
+.single-img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
+h2 {
+    text-align: center;
+}
+ 
+#list-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+ol {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+li {
+    margin-top: 10px;
+}
+
+iframe {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 3px solid white;
+    background-color:rgb(112, 112, 227);
+    color:#21c518;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+#footer-img {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    height: 200px;
+    width: 500px;
+}
