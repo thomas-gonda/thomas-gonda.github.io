@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Lab 3: Quiz</h1>
+    <br />
+    <div class="q-area" id="q1Area">
+      <div>
+        <img id="check-mark-1" src="images/check-mark.avif" hidden />
+        <img id="x-mark-1" src="images/x-mark.webp" hidden />
+      </div>
+      <p>1. What CSS property changes font color?</p>
+    </div>
+    <div class="q-area" id="q2Area">
+      <div>
+        <img id="check-mark-2" src="images/check-mark.avif" hidden />
+        <img id="x-mark-2" src="images/x-mark.webp" hidden />
+      </div>
+      <label>
+        <p>
+          2. What HTML Tag contains the content of a web page? (Include Carrots)
+        </p>
+        <input type="text" placeholder="Enter Tag in Here" id="q2Input" />
+      </label>
+    </div>
+
+    <div class="q-area" id="q3Area">
+      <div>
+        <img id="check-mark-3" src="images/check-mark.avif" hidden />
+        <img id="x-mark-3" src="images/x-mark.webp" hidden />
+      </div>
+      <p>3. What number is greater than 100?</p>
+      <select name="q3" id="q3-container">
+        <option value="1">1</option>
+        <option value="-20">-20</option>
+        <option value="101">101</option>
+        <option value="99">99</option>
+      </select>
+    </div>
+    <div class="q-area" id="q4Area">
+      <div>
+        <img id="check-mark-4" src="images/check-mark.avif" hidden />
+        <img id="x-mark-4" src="images/x-mark.webp" hidden />
+      </div>
+      <p>4. Name a number between 1 and 100, and divisible by 7 and 13</p>
+      <input
+        id="q4-input"
+        type="number"
+        min="1"
+        max="100"
+        step="1"
+        value="1"
+        required
+      />
+    </div>
+    <div class="q-area" id="q5Area">
+      <div>
+        <img id="check-mark-5" src="images/check-mark.avif" hidden />
+        <img id="x-mark-5" src="images/x-mark.webp" hidden />
+      </div>
+      <p>Which is a real programming language?</p>
+      <input id="q5-input" list="languages" />
+      <datalist id="languages">
+        <option value="English"></option>
+        <option value="C"></option>
+        <option value="L"></option>
+        <option value="CSI"></option>
+      </datalist>
+    </div>
+
+    <br />
+    <p id="quiz-attempts">Quiz Attempts: 0</p>
+    <button id="submitBtn">Submit Quiz</button>
+    <br />
+    <div id="ending-text">
+      <p id="scoreText">Your Total Score is:</p>
+      <p id="congratulations-text" hidden>
+        Your Score is 80 or Over! Congratulations!
+      </p>
+    </div>
+
+    <script src="scripts/script.js" defer></script>
+  </body>
+</html>
