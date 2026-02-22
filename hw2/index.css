@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bitcount Single", monospace;
+}
+
+#parameters-container {
+  background-color: antiquewhite;
+  color: black;
+  border: 6px solid yellow;
+  border-radius: 10px;
+  width: 220px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.field {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 18px;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#images-container {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+}
+
+#names-container {
+  background-color: rgb(167, 218, 231);
+  color: black;
+  border: 6px solid yellow;
+  border-radius: 10px;
+  min-height: 200px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+li {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 50px;
+  margin-top: 5px;
+}

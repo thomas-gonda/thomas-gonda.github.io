@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 2</title>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <h1>Team Generator</h1>
+
+    <div id="parameters-container">
+      <div class="field">
+        <label for="team-type">Team Type:</label>
+        <select id="team-type">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="any">Co-ed</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="team-size">Team Size:</label>
+        <input
+          id="team-size"
+          type="number"
+          min="1"
+          max="100"
+          step="1"
+          value="1"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="team-sort">Team Sort:</label>
+        <select id="team-sort">
+          <option value="random">Random</option>
+          <option value="alphabetical">Alphabetical</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="generate-button">Generate Team</button>
+
+    <div id="names-container">
+      <div id="images-container">
+        <img id="male-img" src="images/male.png" alt="male-img" />
+        <img id="female-img" src="images/female.png" alt="female-img" hidden />
+        <img id="coed-img" src="images/coed.png" alt="coed-img" hidden />
+      </div>
+      <ol id="names-text"></ol>
+    </div>
+  </body>
+</html>
