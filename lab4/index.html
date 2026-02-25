@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+
+    <fieldset>
+      <legend>Sign Up</legend>
+      First Name: <input type="text" /><br />
+      Last Name: <input type="text" /><br />
+      Email: <input type="text" /><br />
+      Phone Number:<input type="text" /><br /><br />
+      Zip Code: <input id="zip" type="text" /><span id="zip-error-msg" hidden
+        >Zip Code: Not Found</span
+      ><br />
+      <p id="city">City:</p>
+      <p id="latitude">Latitude</p>
+      <p id="longitude">Longitude:</p>
+      <br />
+      State:
+      <select id="states"></select
+      ><br />
+      Select a County:
+      <select id="counties"></select
+      ><br />
+
+      Desired Username:
+      <input id="username" list="userList" type="text" /><br />
+      <datalist id="userList"> </datalist>
+      <p id="username-status">Username Status:</p>
+      <p id="suggested-password">Suggested Password:</p>
+      Password: <input id="password" type="password" /><br />
+      Type Password Again: <input type="password" /><br />
+      <input type="submit" value="Sign up!" />
+    </fieldset>
+
+    <p id="error-msg" hidden></p>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
