@@ -1,16 +1,3 @@
-// 1) City, longitude and latitude are updated when entering a zip code (10 pts)
-// 2) A "Zip code not found" message is displayed next to its text box, if that's the case (10 pts)
-// 3) The list of counties is updated properly when selecting a State (10 pts)
-// 4) Upon typing the username, a color-coded message indicates whether it is available or not (10 pts)
-// 5) Upon clicking on the Password text box, a suggested password is displayed (10pts)
-// 6) The list of all US states is displayed from the corresponding Web API (10 pts)
-// 7) Page has a nice look and feel (uses Bootstrap or includes 20 CSS rules) (10 pts)
-
-// When clicking on the "Submit" button:
-// 1) There is validation for Username having at least 3 characters   ( 10 pts)
-// 2) There is validation for Password having at least 6 characters    (10 pts)
-// 3) There is validation for Password matching "Retype Password"  (10 pts)
-
 //1
 const zipElem = document.getElementById("zip");
 const zipErrorElem = document.getElementById("zip-error-msg");
@@ -158,12 +145,12 @@ statesElem.addEventListener("change", getCounties);
 //E2
 const errorElem = document.getElementById("error-msg");
 errorElem.style.color = "red";
-errorElem.textContent = "The password has less than 6 characters";
 
 const checkPassword = () => {
   const word = passwordElem.value;
 
   if (word.length < 6) {
+    errorElem.textContent = "The password has less than 6 characters";
     errorElem.hidden = false;
   } else {
     errorElem.hidden = true;
@@ -171,3 +158,36 @@ const checkPassword = () => {
 };
 
 passwordElem.addEventListener("change", checkPassword);
+
+const retypePasswordElem = document.getElementById("retype-password");
+const submitBtn = document.getElementById("submit-btn");
+const successMsg = document.getElementById("success-msg");
+successMsg.style.color = "green";
+
+const submitForm = () => {
+  if (username.value.length < 4) {
+    errorElem.textContent = "The username has less than 4 characters.";
+    errorElem.hidden = false;
+    successMsg.hidden = true;
+    return;
+  }
+
+  if (passwordElem.value.length < 6) {
+    errorElem.textContent = "The password has less than 6 characters.";
+    errorElem.hidden = false;
+    successMsg.hidden = true;
+    return;
+  }
+
+  if (passwordElem.value != retypePasswordElem.value) {
+    errorElem.textContent = "The password was not retyped correctly.";
+    errorElem.hidden = false;
+    successMsg.hidden = true;
+    return;
+  }
+
+  successMsg.hidden = false;
+  errorElem.hidden = true;
+};
+
+submitBtn.addEventListener("click", submitForm);

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -10,35 +11,61 @@
 
     <fieldset>
       <legend>Sign Up</legend>
-      First Name: <input type="text" /><br />
-      Last Name: <input type="text" /><br />
-      Email: <input type="text" /><br />
-      Phone Number:<input type="text" /><br /><br />
-      Zip Code: <input id="zip" type="text" /><span id="zip-error-msg" hidden
-        >Zip Code: Not Found</span
-      ><br />
-      <p id="city">City:</p>
-      <p id="latitude">Latitude</p>
-      <p id="longitude">Longitude:</p>
-      <br />
-      State:
-      <select id="states"></select
-      ><br />
-      Select a County:
-      <select id="counties"></select
-      ><br />
+      <div>
+        <span>First Name: </span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>Last Name: </span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>Email: </span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>Phone Number:</span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>Zip Code: </span>
+        <input id="zip" type="text" />
+        <span id="zip-error-msg" hidden>Zip Code: Not Found</span>
+        <p id="city">City:</p>
+        <p id="latitude">Latitude</p>
+        <p id="longitude">Longitude:</p>
+      </div>
+      <div>
+        <span>State:</span>
+        <select id="states"></select>
+      </div>
+      <div>
+        <span>Select a County:</span>
+        <select id="counties"></select>
+      </div>
 
-      Desired Username:
-      <input id="username" list="userList" type="text" /><br />
-      <datalist id="userList"> </datalist>
-      <p id="username-status">Username Status:</p>
-      <p id="suggested-password">Suggested Password:</p>
-      Password: <input id="password" type="password" /><br />
-      Type Password Again: <input type="password" /><br />
-      <input type="submit" value="Sign up!" />
+      <div>
+        <span>Desired Username:</span>
+        <input required id="username" list="userList" type="text" />
+        <datalist id="userList"> </datalist>
+        <p id="username-status">Username Status:</p>
+      </div>
+      <div>
+        <p id="suggested-password">Suggested Password:</p>
+        <span>Password: </span
+        ><input required id="password" type="password" /><br />
+        <span>Type Password Again: </span
+        ><input required id="retype-password" type="password" />
+      </div>
+      <div id="submit-container">
+        <input id="submit-btn" type="submit" value="Sign up!" />
+      </div>
     </fieldset>
 
-    <p id="error-msg" hidden></p>
+    <div id="submission-container">
+      <p id="error-msg" hidden></p>
+      <p id="success-msg" hidden>Form Successfully Submitted!</p>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

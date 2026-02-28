@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bitcount Single", monospace;
+}
+
+legend {
+  font-family: "Bitcount Single", monospace;
+  text-align: center;
+  color: blue;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  font-size: 3em;
+}
+
+fieldset {
+  background-color: antiquewhite;
+  color: black;
+  border: 6px solid yellow;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+input {
+  margin-top: 12px;
+}
+
+select {
+  margin-top: 12px;
+}
+
+#submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+}
+
+#submission-container {
+  font-size: 32px;
+  text-align: center;
+}
